@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <title>Desposit</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <img class="header-mobile-logo" src="./assets/images/logo.png" alt="">
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product">
+                    <i class="fa-sharp fa-solid fa-coins"></i> Staking pack
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial">
+                    <i class="fa-solid fa-wallet"></i> Wallet
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="">
+                    <i class="fa-solid fa-money-bill-transfer"></i> Transaction
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign Out
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header hidden-m-t">
+        <div class="header-wrapper align-items-center d-flex justify-content-between">
+            <a href="/">
+                <img src="./assets/images/logo.png" alt="" class="header-logo">
+            </a>
+
+            <div class="header-nav d-flex">
+                <div class="header-nav-item centering">
+                    Dashboard
+                </div>
+                <div class="header-nav-item centering">
+                    Staking pack
+                </div>
+                <div class="header-nav-item centering active">
+                    Wallet
+                </div>
+                <div class="header-nav-item centering">
+                    Transaction
+                </div>
+                <a href="#" class="primary-button d-flex align-items-center">
+                    <i class="fa-solid fa-user mr-2"></i> PhuGyPhuGy
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-bg">
+
+        <div class="container deposit pb-2">
+            <div class="deposit primary-box">
+                <div class="wallet-control d-flex align-items-center justify-content-center">
+                    <a href="/deposit.html" class="wallet-control-item primary-button active">
+                        DEPOSIT
+                    </a>
+                    <a href="/withdraw.html" class="wallet-control-item primary-button">
+                        WITHDRAW
+                    </a>
+                    <a href="/transfer.html" class="wallet-control-item primary-button">
+                        TRANSFER
+                    </a>
+                    <a href="/swap.html" class="wallet-control-item primary-button">
+                        SWAP
+                    </a>
+                </div>
+
+                <div class="deposit-form centering">
+                    <form action="action_page.php" method="post">
+
+                        <div class="container">
+                            <div class="login-form-div">
+                                <label for="uname"><b>Deposit with currency:</b></label>
+                                <select name="coin" id="coin">
+                                    <option value="volvo">USDT</option>
+                                    <option value="saab">OBA</option>
+                                </select>
+                            </div>
+
+                            <div class="login-form-div">
+                                <label for="uname"><b>Blockchain network:</b></label>
+                                <select name="coin" id="coin">
+                                    <option value="volvo">BINANCE SMART CHAIN NETWORK</option>
+                                    <option value="saab">OBA</option>
+                                </select>
+                            </div>
+
+                            <div class="login-form-div">
+                                <label for="uname"><b>Amount</b></label>
+                                <input type="text" placeholder="Amount" name="uname" required>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="primary-button">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="centering-mobile">
+                        <img src="./assets/images/logo-text.png" alt="" class="footer-logo">
+                    </div>
+
+                    <div class="footer-desc">
+                        Cryptocurrencies are used prim outside existing banking govern outside existing.
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Company
+                        </div>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Our Services</li>
+                            <li>Prices</li>
+                            <li>Plans</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Categories
+                        </div>
+                        <ul>
+                            <li>Business</li>
+                            <li>Crypto Market</li>
+                            <li>Crypto News</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Newsletter
+                        </div>
+
+                        <div class="footer-letter-input d-flex align-items-center">
+                            <input type="text" placeholder="Enter you Email">
+
+                            <div class="footer-social-icon centering">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+
+                        <div class="centering-mobile footer-social d-flex align-items-cente justify-content-start">
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-verify">
+            Copyright © Hetery | Designed by Hetery Team.
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    const $query = document.querySelector.bind(document)
+    const $$query = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        $query('.soft-menu').classList.toggle('open')
+        $query('.soft-menu__list').classList.toggle('open')
+    }
+
+    $$query('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+</script>

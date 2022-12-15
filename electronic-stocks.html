@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<style>
+    .stock-box {
+        width: 50%;
+        text-align: center;
+        background-color: #E7E8E8;
+        padding: 8px 0;
+        font-weight: 600;
+    }
+
+    .stock-wrapper {
+        border-radius: 4px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .stock-box:first-child {
+        border-right: 1px solid #ddd;
+    }
+
+    .stock-input {
+        color: #fff !important;
+    }
+</style>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <img class="header-mobile-logo" src="./assets/images/logo.png" alt="">
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#about">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#product">
+                    <i class="fa-sharp fa-solid fa-coins"></i> Staking pack
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#tutorial">
+                    <i class="fa-solid fa-wallet"></i> Wallet
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="">
+                    <i class="fa-solid fa-money-bill-transfer"></i> Transaction
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign Out
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header hidden-m-t">
+        <div class="header-wrapper align-items-center d-flex justify-content-between">
+            <a href="/">
+                <img src="./assets/images/logo.png" alt="" class="header-logo">
+            </a>
+
+            <div class="header-nav d-flex">
+                <div class="header-nav-item centering active">
+                    Dashboard
+                </div>
+                <div class="header-nav-item centering">
+                    Staking pack
+                </div>
+                <div class="header-nav-item centering ">
+                    Wallet
+                </div>
+                <div class="header-nav-item centering">
+                    Transaction
+                </div>
+                <a href="#" class="primary-button d-flex align-items-center">
+                    <i class="fa-solid fa-user mr-2"></i> PhuGyPhuGy
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-bg pb-2">
+        <div class="container">
+            <div class="primary-box primary-box--black">
+                <div class="staking-title d-flex align-items-center justify-content-between">
+                    <div class="primary-title">
+                        electronic stocks
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="staking-box flex-column">
+                            <div class="">
+                                <b>Total HTY</b>
+                            </div>
+                            <div class="value value-large">
+                                2500 HTY (Lock)
+                            </div>
+                        </div>
+
+                        <div class="staking-box flex-column">
+                            <div class="">
+                                <b>Total USD</b>
+                            </div>
+                            <div class="value value-large">
+                                81.25 USDT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-2 grid-m-1">
+                <div class="primary-box dashboard-balance">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="dashboard-balance-title">
+                            <span class="dashboard-balance-value-large">
+                                HTY
+                            </span> (line chart)
+                        </div>
+                        <div class="dashboard-balance-value">
+                            $0.6
+                        </div>
+                    </div>
+
+                    <div class="chart">
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+
+                    <div class="staking-select df-container d-flex flex-row deposit login-form-div ">
+                        <input class="stock-input input" type="text">
+
+                        <div class="primary-button ml-2">
+                            Buy now
+                        </div>
+                    </div>
+
+                    <div class="package-balance d-flex align-items-center justify-content-between ">
+                        <div class="dashboard-balance-value">
+                            Balance:
+                        </div>
+
+                        <div class="value">
+                            2889.00 BUSD
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="primary-box primary-box--black">
+                        <div class="centering">
+                            <div class="primary-title ">
+                                Avaiable
+                            </div>
+                        </div>
+
+                        <div class="stock-wrapper d-flex align-items-center">
+                            <div class="stock-box">
+                                258 HTY
+                            </div>
+                            <div class="stock-box">
+                                30 Days
+                            </div>
+                        </div>
+
+                        <div class="centering">
+                            <div class="primary-button">
+                                CLAIM
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-box primary-box--black">
+                        <div class="centering">
+                            <div class="primary-title ">
+                                Electronic stocks
+                            </div>
+                        </div>
+                        <div class="stock-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed dosed doLorem ipsum dolor
+                            sit amet, consectetur
+                            adipiscing elit, sed do
+                            adipiscing elit, sed do
+                            adipiscing elit, sed do
+                            adipiscing elit, sed doadipiscing elit, sed do
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="primary-box primary-box--black">
+                <div class="primary-title">
+                    HISTORY
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="centering-mobile">
+                        <img src="./assets/images/logo-text.png" alt="" class="footer-logo">
+                    </div>
+
+                    <div class="footer-desc">
+                        Cryptocurrencies are used prim outside existing banking govern outside existing.
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Company
+                        </div>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Our Services</li>
+                            <li>Prices</li>
+                            <li>Plans</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Categories
+                        </div>
+                        <ul>
+                            <li>Business</li>
+                            <li>Crypto Market</li>
+                            <li>Crypto News</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Newsletter
+                        </div>
+
+                        <div class="footer-letter-input d-flex align-items-center">
+                            <input type="text" placeholder="Enter you Email">
+
+                            <div class="footer-social-icon centering">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+
+                        <div class="centering-mobile footer-social d-flex align-items-cente justify-content-start">
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-verify">
+            Copyright © Hetery | Designed by Hetery Team.
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="./assets/js/Chart.js"></script>
+<script>
+    const $query = document.querySelector.bind(document)
+    const $$query = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        $query('.soft-menu').classList.toggle('open')
+        $query('.soft-menu__list').classList.toggle('open')
+    }
+
+    $$query('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+
+    var xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+    var yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            scales: {
+                yAxes: [{ ticks: { min: 6, max: 16 } }],
+            }
+        }
+    });
+</script>

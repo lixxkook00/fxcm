@@ -1,0 +1,334 @@
+/* PC high */
+@media (min-width: 1699px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+    .scene {
+        position: absolute;
+        top: 50%;
+        left: -2vw;
+        /* width: 10vw; */
+        height: 10vw;
+        transform-style: preserve-3d;
+        transform: translate(0,-50%) rotateX(-33.5deg) rotateY(45deg);
+    }
+
+    .question-cube-1 {
+        position: absolute;
+        width: 6vw;
+        top: 20.6vw;
+        left: -0.6vw;
+    }
+
+    .question-cube-2 {
+        position: absolute;
+        width: 6vw;
+        top: 14.5vw;
+        left: 26.1vw;
+    }
+}
+
+
+/* PC only */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+/* Tablet to PC low resolution */
+@media (min-width: 985px) and (max-width: 1200px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+    
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    .grid-m-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .centering-mobile{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .footer-letter-input{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-desc,
+    .footer-block{
+        text-align: center;
+    }
+
+    .card-name{
+        font-size: 14px;
+    }
+
+    .primary-title{
+        font-size: 22px;
+    }
+
+    .accor-title-text{
+        font-size: 14px;
+    }
+
+    .accordion-item button{
+        padding: 10px 4px;
+    }
+
+    .feedback-title{
+        flex-direction: column;
+    }
+
+    .feedback-title-right{
+        margin-top: 20px;
+    }
+
+    .feedback-title-item-value {
+        font-size: 28px;
+    }
+
+    .star {
+        width: 15px;
+    }
+
+    .feedback-list{
+        margin-top: 30px;
+    }
+
+    .workflow-item-title{
+        text-align: center;
+    }
+
+    .workflow-img-wrapper{
+        width: 49vw;
+    }
+
+    .workflow-img-wrapper img:first-child{
+        margin: 20px 0;
+    }
+
+    .workflow-img-wrapper.active .workflow-img-tag--2 {
+        width: 21vw;
+        top: 22vw;
+    }
+
+    .workflow-img-wrapper.active .workflow-img-tag--1 {
+        width: 10vw;
+        top: 20vw;
+        right: 9.3vw;
+    }
+
+    .workflow-img-wrapper.active .workflow-img-tag--3 {
+        width: 23vw;
+    }
+
+    .question-cube{
+        left: 45%;
+    }
+
+    .question-img-wrapper{
+        height: 49vw;
+        width: 70vw;
+        margin-top: 15vw;
+    }
+
+    .login-form{
+        width: 100%;
+    }
+
+    .login-form-div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-bg{
+        min-height: calc(100vh - 124px);
+        background-size: auto 100%;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .primary-box{
+        padding: 10px;
+    }
+
+    .wrrapper-2{
+        gap: 0;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .dashboard-avt{
+        width: 90px;
+        height: 90px;
+    }
+
+    .qr-box{
+        padding: 5px;
+    }
+
+    .qr-link-side{
+        font-size: 10px;
+    }
+
+    .dashboard-ref-button{
+        font-size: 11px;
+    }
+
+    .comission-title{
+        font-size: 16px;
+    }
+
+    .comission-value {
+        font-size: 18px;
+    }
+
+    .wallet-control-item{
+        width: 48%;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    .wallet-control{
+        flex-wrap: wrap;
+    }
+
+    .comission-wrapper{
+        flex-direction: column;
+    }
+
+    .comission-item:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .comission-item{
+        border: none !important;
+        width: 100%;
+    }
+
+    .deposit .wallet-control-item {
+        width: 45%;
+    }
+
+    .deposit-form form{
+        margin: 6px 0;
+    }
+
+    .deposit input,
+    .deposit select{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .deposit .wallet-control {
+        margin-bottom: 5px;
+    }
+
+    .with-draw-box {
+        margin: 5px 0;
+    }
+
+    .staking-title{
+        flex-direction: column;
+    }
+
+    .value-large{
+        font-size: 16px;
+    }
+
+    .staking-box{
+        justify-content: center;
+        padding-right: 10px;
+    }
+
+    .staking-box div{
+        text-align: center;
+    }
+
+    .staking-time{
+        width: auto;
+        padding: 0 4px;
+    }
+
+    .dashboard-balance-value-large{
+        font-size: 22px !important;
+    }
+
+    .dashboard-balance-value{
+        font-size: 16px;
+    }
+
+    .intro-item-text{
+        font-size: 10px;
+    }
+
+    .intro-item-value {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .intro-item-value i {
+        font-size: 12px;
+    }
+
+    .intro .col-4{
+        padding: 4px;
+    }
+}
+
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-tl{
+        display: none !important;
+    }
+
+    
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none !important;
+    }
+
+    .token-infor:first-child{
+        border: none;
+    }
+}
+
+/* 500*/
+@media (min-width: 500px) and (max-width: 742px) {
+    .hidden-500plus {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hidden-500{
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .main-content{
+        width: 100% !important;
+    }
+}
+

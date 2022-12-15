@@ -1,0 +1,94 @@
+.intro-infor{
+    padding: 10px 0;
+    background-color: #000;
+}
+
+.intro-main {
+    height: calc(100% - 74px);
+}
+
+.intro-wrapper{
+    padding-bottom: 0;
+}
+
+.pack{
+    background-color: #07091B;
+    color: #fff;
+}
+
+.pack-card{
+    border: 1px solid #fff;
+}
+
+.workflow-img-wrapper {
+    width: 27vw;
+}
+
+.workflow-img-wrapper.active .workflow-img-tag--1 {
+    width: 5vw;
+    top: -1vw;
+    right: 4.3vw;
+}
+
+.workflow-img-wrapper.active .workflow-img-tag--3 {
+    width: 9vw;
+    bottom: 11vw;
+    right: -4vw;
+    animation-delay: 1.2s;
+}
+
+.feedback-item:hover{
+    background: url(../images/feedback-card-bg.png) no-repeat center center;
+    background-size: cover;
+    border: none;
+}
+
+.question-img-wrapper{
+    width: 100% !important;
+    max-width: 500px;
+    height: auto !important;
+}
+
+.feedback-item{
+    margin: 0;
+}
+
+.chart-bg{
+    background: url(../images/chart-bg.png) no-repeat top center;
+    background-size: contain;
+}
+
+.chart-img{
+    margin-top: 10vh;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .pack-desc{
+        width: 100%;
+    }
+
+    .workflow-img-wrapper {
+        width: 65vw !important;
+    }
+
+    .feedback-item{
+        margin-bottom: 10px;
+    }
+
+    .workflow-img{
+        margin-bottom: 10px;
+    }
+
+    .feedback{
+        padding-top: 0; 
+    }
+
+    .chart-img{
+        margin-top: 0;
+    }
+
+    .intro-main{
+        height: calc(100% - 64px);
+    }
+}
