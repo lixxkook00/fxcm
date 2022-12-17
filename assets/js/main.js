@@ -20,45 +20,9 @@ bind1('.scroll-to-top').onclick = () => {
     });
 }
 
-// handle animation number
-function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
-    let currentNumber = startNumber
-    const interval = window.setInterval(updateNumber, 17)
-
-    function updateNumber() {
-        if (currentNumber >= finalNumber) {
-            clearInterval(interval)
-        } else {
-            let inc = Math.ceil(finalNumber / (duration / 17))
-            if (currentNumber + inc > finalNumber) {
-                currentNumber = finalNumber
-                clearInterval(interval)
-            } else {
-                currentNumber += inc
-            }
-            callback(currentNumber)
-        }
-    }
-}
-
 // loading animation
 window.addEventListener('load', (event) => {
   bind1('.loading').style.display = "none"
-
-  animateNumber(6186056420, 2000, 0, function(number) {
-    const formattedNumber = number.toLocaleString()
-    document.getElementById('total-staking').innerText = '$' + formattedNumber;
-  })
-
-  animateNumber(168082, 2000, 0, function(number) {
-    const formattedNumber = number.toLocaleString()
-    document.getElementById('stakers').innerText = formattedNumber;
-  })
-
-  animateNumber(6186056420, 2000, 0, function(number) {
-    const formattedNumber = number.toLocaleString()
-    document.getElementById('total-rewards').innerText = '$' + formattedNumber;
-  })
 });
 
 // handle animation on scroll
@@ -103,40 +67,7 @@ var swiper4 = new Swiper(".swiper-product-1", {
         spaceBetween: 10
         },
         1023: {
-        slidesPerView: 6,
-        spaceBetween: 20
-        }
-    },
-});
-
-var swiper5 = new Swiper(".swiper-product-2", {
-    slidesPerView: 3,
-      spaceBetween: 10,
-    // auto
-    autoplay: {
-        delay: 500,
-        disableOnInteraction: false,
-    },
-    loop: true,
-    speed: 4000,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        // when window width is >= 480px
-        120: {
-        slidesPerView: 2,
-        spaceBetween: 2
-        },
-        // when window width is >= 640px
-       // when window width is >= 640px
-        740: {
-        slidesPerView: 2,
-        spaceBetween: 10
-        },
-        1023: {
-        slidesPerView: 6,
+        slidesPerView: 5,
         spaceBetween: 20
         }
     },
