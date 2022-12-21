@@ -23,7 +23,7 @@
     font-weight: 300;
     font-size: 16px;
     padding: 0 10px;
-    font-family: 'Aristotelica';
+    font-family: 'Roboto';
     text-transform: capitalize;
     min-width: 120px;
     font-weight: 800;
@@ -75,7 +75,7 @@
 }
 
 .intro-content{
-	font-family: 'Aristotelica';
+	font-family: 'Roboto';
 }
 
 .intro-item-text{
@@ -702,7 +702,7 @@ input:focus-visible{
   color: #fff;
   border-top: 1px solid rgba(221, 221, 221, 0.116);
   font-size: 14px;
-  font-family: 'Aristotelica';
+  font-family: 'Roboto';
 }
 
 .dg.ac {    
@@ -1158,7 +1158,7 @@ select:focus-visible{
 }
 
 .with-draw-title{
-  font-family: 'Aristotelica';
+  font-family: 'Roboto';
   font-weight: 600;
   font-size: 20px;
   color: #000;

@@ -51,36 +51,36 @@
     <div class="soft-menu" onclick="toggleNavMobile()">
         <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
             <li class="soft-menu__item soft-menu__item--active">
-                <a class="" href="#about">
+                <a class="" href="#intro">
                     <i class="fa-solid fa-house"></i> Home
                 </a>
             </li>
             <li class="soft-menu__item hehe">
-                <a class="" href="#product">
-                    <i class="fa-solid fa-book"></i> Strategy
+                <a class="" href="#strategy">
+                    <i class="fa-solid fa-bolt"></i> Strategy
                 </a>
             </li>
             <li class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="#tutorial">
-                    <i class="fa-solid fa-store"></i> Partners
-                </a>
-            </li>
-
-            <li class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="">
-                    <i class="fa-brands fa-wpexplorer"></i> Invest with FXCM
+                <a class="" href="#workflow">
+                    <i class="fa-solid fa-handshake"></i>Partners
                 </a>
             </li>
 
             <li class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="">
-                    <i class="fa-brands fa-wpexplorer"></i> News
+                <a class="" href="#workflow">
+                    <i class="fa-solid fa-money-bill-trend-up"></i> Invest with FXCM
                 </a>
             </li>
 
             <li class="soft-menu__item soft-menu__item-sub">
-                <a class="" href="">
-                    <i class="fa-brands fa-wpexplorer"></i> Q&A
+                <a class="" href="#news">
+                    <i class="fa-solid fa-earth-oceania"></i> News
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#question">
+                    <i class="fa-solid fa-circle-question"></i> Q&A
                 </a>
             </li>
 
@@ -100,24 +100,24 @@
             </a>
 
             <div class="header-nav d-flex">
-                <div class="header-nav-item centering">
+                <a href="#intro" class="header-nav-item centering">
                     Home
-                </div>
-                <div class="header-nav-item centering">
+                </a>
+                <a href="#strategy" class="header-nav-item centering">
                     Strategy
-                </div>
-                <div class="header-nav-item centering">
+                </a>
+                <a href="#workflow" class="header-nav-item centering">
                     Partners
-                </div>
-                <div class="header-nav-item centering">
+                </a>
+                <a href="#workflow" class="header-nav-item centering">
                     Invest with FXCM Capital
-                </div>
-                <div class="header-nav-item centering">
+                </a>
+                <a href="#news" class="header-nav-item centering">
                     News
-                </div>
-                <div class="header-nav-item centering">
+                </a>
+                <a href="#question" class="header-nav-item centering">
                     Q&A
-                </div>
+                </a>
 
                 <a href="#" class="primary-button">
                     Login
@@ -156,10 +156,13 @@
     </section>
 
     <!-- ABOUT-->
-    <section class="workflow">
+    <section id="about" class="workflow">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
+                    <div class="workflow-title mr-5">
+                        About Us
+                    </div>
                     <div class="workflow-img wow bounceInUp">
                         <div id="workflow-img" class="workflow-img-wrapper">
                             <img src="./assets/newImages/introduc-lap.png" alt="">
@@ -168,9 +171,6 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="workflow-content wow bounceInUp">
-                        <div class="workflow-title">
-                            About Us
-                        </div>
                         <div class="workflow-desc">
                             Generated and run by CORE TEAM, who have over 20 years experience in field of
                             financial investment and enterprise operations, FXCM CAPITAL is strategically
@@ -198,6 +198,17 @@
                             Develop convenient financial solutions for customers by applying smart digital
                             technology, comprehensive product strategy and best customer experience.
                         </div>
+
+                        <div class="workflow-title workflow-title-sub">
+                            Core values
+                        </div>
+                        <div class="workflow-desc">
+                            Respect cooperation
+                            <br>
+                            Trusted commitment
+                            <br>
+                            Always have to be adapted for the digital financial world.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,7 +216,7 @@
     </section>
 
     <!-- STRATEGY-->
-    <section class="workflow strategy">
+    <section id="strategy" class="workflow strategy">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -313,7 +324,7 @@
     </section>
 
     <!-- NEWS -->
-    <section class="news news-old strategy">
+    <section id="news" class="news news-old strategy">
         <div class="centering">
             <div class="workflow-title">
                 NEWS
@@ -322,7 +333,8 @@
 
         <div class="container">
             <div class="news-list grid grid-2 grid-m-1">
-                <div class="card-wrapper wow bounceInLeft">
+                <a href="https://guardian.ng/features/why-bitcoin-could-become-the-worlds-currency/"
+                    class="card-wrapper wow bounceInLeft">
                     <img src="./assets/images/Binance-hacked.png" alt="" class="cart-bg">
 
                     <div class="card-content">
@@ -336,7 +348,9 @@
                             </div>
 
                             <div class="card-paragraph">
-                                Maecenas tempus, tellus eget condimentum rhoncus, sem quam ...
+                                Can Bitcoin become the world’s currency? Some people think Bitcoin could become the
+                                world’s reserve currency. Here’s
+                                why.
                             </div>
 
                             <div class="card-share d-flex align-items-center justify-content-end">
@@ -344,16 +358,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
 
                 <div class="grid grid-1">
-                    <div class="card-wrapper card-wrapper-small wow bounceInDown">
+                    <a href="https://www.cfr.org/backgrounder/cryptocurrencies-digital-dollars-and-future-money"
+                        class="card-wrapper card-wrapper-small wow bounceInDown">
                         <img src="./assets/images/new-2.jpg" alt="" class="cart-bg">
 
                         <div class="card-content">
                             <div class="card-infor">
                                 <div class="card-name">
-                                    Why Crypto Could Become The Global Currency Of The Future
+                                    Cryptocurrencies, Digital Dollars, and the Future of Money
                                 </div>
 
                                 <div class="card-date">
@@ -361,7 +376,8 @@
                                 </div>
 
                                 <div class="card-paragraph">
-                                    Maecenas tempus, tellus eget condimentum rhoncus, sem quam ...
+                                    In the span of a few years, cryptocurrencies have grown from digital novelties to
+                                    trillion-dollar ...
                                 </div>
 
                                 <div class="card-share d-flex align-items-center justify-content-end">
@@ -369,16 +385,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
                     <div class="grid grid-2">
                         <div class="card-wrapper card-wrapper-small wow bounceInRight">
                             <img src="./assets/images/new-3.jpg" alt="" class="cart-bg">
 
-                            <div class="card-content">
+                            <a href="https://www.binance.com/en/news/flash/7332262" class="card-content">
                                 <div class="card-infor">
                                     <div class="card-name">
-                                        Why Crypto Could Become The Global Currency Of The Future
+                                        Polygon Founder Unveils Web3 Accelerator Beacon
                                     </div>
 
                                     <div class="card-date">
@@ -386,23 +402,24 @@
                                     </div>
 
                                     <div class="card-paragraph">
-                                        Maecenas tempus, tellus eget condimentum rhoncus, sem quam ...
+                                        Noted venture capital firm Andreessen Horowitz (a16z) has ...
                                     </div>
 
                                     <div class="card-share d-flex align-items-center justify-content-end">
                                         <i class="fa-solid fa-share-from-square"></i> SHARE
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="card-wrapper card-wrapper-small wow bounceInUp">
+                        <a href="https://www.binance.com/en/news/flash/7331962"
+                            class="card-wrapper card-wrapper-small wow bounceInUp">
                             <img src="./assets/images/new-4.jpg" alt="" class="cart-bg">
 
                             <div class="card-content">
                                 <div class="card-infor">
                                     <div class="card-name">
-                                        Why Crypto Could Become The Global Currency Of The Future
+                                        Central African Republic Delays Crypto Coin Listing to 2023
                                     </div>
 
                                     <div class="card-date">
@@ -418,7 +435,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -562,7 +579,7 @@
     </section> -->
 
     <!-- QUESTION -->
-    <section class="question">
+    <section id="question" class="question">
         <div class="centering">
             <div class="primary-title">
                 Frequently Asked Question
@@ -769,7 +786,11 @@
                     </div>
 
                     <div class="footer-desc">
-                        Cryptocurrencies are used prim outside existing banking govern outside existing.
+                        FXCM CAPITAL
+                        <br>
+                        Forex Capital Markets LLC
+                        <br>
+                        UK
                     </div>
                 </div>
 
@@ -821,7 +842,7 @@
                                 <i class="fa-brands fa-youtube"></i>
                             </div>
                             <div class="footer-social-icon centering">
-                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-telegram"></i>
                             </div>
                             <div class="footer-social-icon centering">
                                 <i class="fa-solid fa-envelope"></i>
@@ -835,7 +856,7 @@
             </div>
         </div>
         <div class="footer-verify">
-            Copyright © FXCM | Designed by FXCM Team.
+            CopyRight @ FXCMCAPITAL TEAM
         </div>
     </footer>
 
