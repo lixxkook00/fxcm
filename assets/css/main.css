@@ -10,7 +10,7 @@
 }
 
 .header-wrapper{
-    padding: 10px 5vw;
+    padding: 0px 3vw;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
@@ -26,7 +26,8 @@
     font-family: 'Aristotelica';
     text-transform: capitalize;
     min-width: 120px;
-    font-weight: 600;
+    font-weight: 800;
+    color: #000F4A;
 }
 
 .header-nav-item.active,
@@ -266,7 +267,7 @@
 
 .workflow-desc {
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -404,7 +405,7 @@
 
 .partner{
   padding: 30px 0 50px;
-  background-color: #05060E;
+  background-color: #80808024;
 }
 
 .partner-img{
@@ -415,7 +416,7 @@
 }
 
 .partner-img img{
-  height: 32px;
+  height: 60px;
   width: auto;
 }
 
@@ -511,7 +512,8 @@
 .question-img{
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  height: 100%;
 }
 
 .question-img-wrapper{

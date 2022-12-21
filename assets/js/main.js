@@ -36,8 +36,6 @@ document.addEventListener('scroll', function() {
   }
 })
 
-
-
 // SLIDER
 var swiper4 = new Swiper(".swiper-product-1", {
     slidesPerView: 3,
@@ -54,6 +52,39 @@ var swiper4 = new Swiper(".swiper-product-1", {
         clickable: true,
     },
     speed: 4000,
+    breakpoints: {
+        // when window width is >= 480px
+        120: {
+        slidesPerView: 2,
+        spaceBetween: 2
+        },
+        // when window width is >= 640px
+       // when window width is >= 640px
+        740: {
+        slidesPerView: 2,
+        spaceBetween: 10
+        },
+        1023: {
+        slidesPerView: 5,
+        spaceBetween: 20
+        }
+    },
+});
+
+var swiper5 = new Swiper(".swiper-product-2", {
+    slidesPerView: 3,
+      spaceBetween: 10,
+    // auto
+    autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    speed: 4000,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     breakpoints: {
         // when window width is >= 480px
         120: {
