@@ -142,3 +142,147 @@ html,body{
 .loading img:last-child{
   max-width: 65px;
 }
+
+/* UPDATE ROADMAP */
+.intro-wrapper{
+    background-image: linear-gradient(180deg, #050F46 44%, #00246A 100%);
+}
+
+.roadmap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+
+    padding: 0 2vw 0 7vw;
+}
+
+.roadmap-item{
+    margin-right: 5.7vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.roadmap-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.roadmap-item-time{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.roadmap-item-point{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #00A8FF;
+    margin: 4px 0;
+    position: relative;
+    transition:all .25s ease;
+    cursor: pointer;
+}
+
+.roadmap-item-point:after{
+  content:'';
+  display:block;
+  position:absolute;
+  top:0; 
+  right:0; 
+  bottom:0; 
+  left:0;
+  border-radius:50%;
+  border:1px solid #00A8FF;
+	opacity:0;
+	animation: ripple 900ms ease-out infinite;
+}
+
+.roadmap-item-point:hover{
+  transform: scale(1.5);
+
+}
+.roadmap-item-point:hover:after{
+    animation: none;
+}	
+
+
+@keyframes ripple {
+  0% {transform:scale(1); }
+  40% {transform:scale(1.75); opacity:1;}
+	90% {transform:scale(1.9);}
+  100% {transform:scale(2); opacity:0;}
+}
+
+.roadmap-item-line{
+    border-right: 2px dotted #fff;
+    height: 18vh;
+}
+
+.roadmap-item-line--2{
+    height: 26vh;
+}
+
+.roadmap-item-line--3{
+    height: 16vh;
+}
+
+.roadmap-item-line--4{
+    height: 13vh;
+}
+
+.roadmap-item-line--5{
+    height: 22vh;
+}
+
+.roadmap-item-line--6{
+    height: 32vh;
+}
+
+.roadmap-item-content{
+    position: relative;
+}
+
+.roadmap-item-text{
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+
+    border: 1px solid #5CA7F6;
+    padding: 10px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    width: 15vw;
+
+    background-color: #11c6b73b;
+    opacity: 0;
+
+    transition: all 0.5s ease;
+}
+
+.roadmap-item-content:hover .roadmap-item-text{
+    opacity: 1;
+}
+
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .roadmap-item-text{
+        width: 50vw;
+    }
+
+    .roadmap-item-line--3{
+        height: 19vh;
+    }
+}
