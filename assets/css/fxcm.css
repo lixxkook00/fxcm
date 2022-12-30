@@ -12,8 +12,9 @@ html,body{
 }
 
 .intro-wrapper{
-    background: url(../newImages/bg-intro.png) no-repeat top center;
+    background: url(../newImages/bg-intro.png) no-repeat bottom center;
     background-size: 100% 100%;
+    background-color: #fff !important;
 }
 
 .workflow-img{
@@ -144,9 +145,6 @@ html,body{
 }
 
 /* UPDATE ROADMAP */
-.intro-wrapper{
-    background-image: linear-gradient(180deg, #050F46 44%, #00246A 100%);
-}
 
 .roadmap{
     position: absolute;
@@ -284,5 +282,36 @@ html,body{
 
     .roadmap-item-line--3{
         height: 19vh;
+    }
+}
+
+/* update earth */
+.intro-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.intro-img canvas {
+    /* width: 70vw;
+    max-width: 1200px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.roadmap-item-text{
+    background-color: #004b45d1;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .intro-img{
+        transform: scale(0.8);
+    }
+
+    .intro-wrapper{
+        background-position: left center;
     }
 }
