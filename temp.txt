@@ -1,4 +1,138 @@
-<!-- CUBE -->
+
+    <!-- HEDGING-->
+    <!-- <section class="workflow hedging">
+        <div class="centering">
+            <div class="primary-title">
+                HEdGING
+            </div>
+        </div>
+
+        <div class="chart-bg">
+            <div class="container">
+                <div class="centering">
+                    <div class="pack-desc text-center wow bounceInUp">
+                        High-hedging is a high-speed trading model that minimizes risk, opposites at the same time, and
+                        the same volume ensure a
+                        winning order on one side of buying or selling. High-Hedging generates profits from partnering
+                        with fund management
+                        institutions.
+                        <br> <br>
+                        <a href="">More information</a>
+                    </div>
+                </div>
+                <img src=" /assets/newImages/phone-up.png" alt="">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ABOUT-->
+    <!-- <section class="workflow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="workflow-img">
+                        <div id="workflow-img" class="workflow-img-wrapper">
+                            <img src="./assets/newImages/about-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="workflow-content">
+                        <div class="workflow-title">
+                            About FXCM
+                        </div>
+                        <div class="workflow-desc">
+                            FXCM stands for “Hedging Trading Strategy For You” which is our mission and core focus.
+                            FXCM is a project that
+                            combines the community's strength, the knowledge and experience of the core team of experts,
+                            and the computing power of
+                            artificial intelligence to generate profits for businesses and the member community through
+                            the secure trading of
+                            indices on financial markets.
+
+                            <br><br>
+
+                            Hedging, also known as Hedge, is one of the risk management strategies. Hedges are used to
+                            reducing losses caused by
+                            market fluctuations (commodities, currencies, stocks).
+
+                            <br><br>
+
+                            Hedging is the process by which investors create an opposite trading order in order to avoid
+                            a situation in which the
+                            market moves in the opposite direction of the investor's prediction. Then, Hedging will make
+                            a profit by exploiting the
+                            price and time difference to create profitable value.
+
+                            <br>
+
+                            <div class="intro-button primary-button">
+                                More Information
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- NEWS -->
+    <!-- <section class="news">
+        <div class="centering">
+            <div class="primary-title">
+                BLOG FXCM
+            </div>
+        </div>
+
+        <div class="product-slider-1">
+            <div class="swiper swiper-product-1">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="blog-img">
+                            <img src="./assets/newImages/news-card.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="blog-img">
+                            <img src="./assets/newImages/news-card.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="blog-img">
+                            <img src="./assets/newImages/news-card.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="blog-img">
+                            <img src="./assets/newImages/news-card.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="blog-img">
+                            <img src="./assets/newImages/news-card.png" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="blog-img">
+                            <img src="./assets/newImages/news-card.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <div class="container mt-5">
         <div class="col-lg-6">
             <div class="cube-wrapper">
